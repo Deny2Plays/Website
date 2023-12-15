@@ -1,25 +1,26 @@
 const canvas = document.querySelector("canvas");
 const c = canvas.getContext("2d")
 
-canvas.width = window.innerWidth
-canvas.height = window.innerHeight
+canvas.width = 1024
+canvas.height = 576
 
 const gravity = 1.5
 
 class Platform{
-    constructor({x,y}){
+    constructor({x,y, image}){
         this.position = {
             x,
             y
         }
 
-        this.width = 200,
-        this.height = 20
+        this.image = image
+        this.width = image.width
+        this.height = image.height
+
     }
 
     draw(){
-        c.fillStyle = "black"
-        c.fillRect(this.position.x, this.position.y, this.width, this.height)
+        c.drawImage(this.image, this.position.x, this.position.y)
     }
 }
 
@@ -55,10 +56,13 @@ class Player{
     }
 }
 
+const image = new Image()
+image.src = "https://raw.githubusercontent.com/Deny2Plays/Website/main/imgs/platform.png"
+
 const platforms = [ new Platform({
-    x: 200, y: 100
+    x: -1, y: 460, image
 }), new Platform({
-    x: 500, y: 80
+    x: image.width-3, y: 460, image
 }) ];
 
 const player = new Player();
@@ -75,11 +79,12 @@ let scrollOffSet = 0
 
 function animate(){
     requestAnimationFrame(animate)
-    c.clearRect(0, 0, canvas.width, canvas.height)
-    player.update()
+    c.fillStyle = "white"
+    c.fillRect(0, 0, canvas.width, canvas.height)
     platforms.forEach((platform) => {
         platform.draw()
     })
+    player.update()
 
     if(keys.right.pressed && player.position.x < 400 ){
         player.velocity.x = 5
