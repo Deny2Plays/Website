@@ -1,6 +1,3 @@
-import platform from "https://raw.githubusercontent.com/Deny2Plays/Website/main/imgs/platform.png"
-
-console.log(platform)
 const canvas = document.querySelector("canvas");
 const c = canvas.getContext("2d")
 
