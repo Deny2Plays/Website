@@ -1,4 +1,4 @@
-import platform from "../imgs/platform.png"
+import platform from "https://raw.githubusercontent.com/Deny2Plays/Website/main/imgs/platform.png"
 
 console.log(platform)
 const canvas = document.querySelector("canvas");
