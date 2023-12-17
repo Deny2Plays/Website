@@ -254,12 +254,6 @@ span{
         padding: 14px;
         font-size: 15px;
     }
-
-    body{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
 }
 
 @media(max-width: 633px){
@@ -269,105 +263,64 @@ span{
     .field .error-txt{
         text-align: center;
     }
-
-    body{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
 }
 
 @media(max-width: 564px){
     .field .item{
-        width: 90%;
+        width: 80%;
     }
-    body{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
 }
 
 @media(max-width: 510px){
     .field .item{
-        width: 90%;
+        width: 75%;
     }
-    body{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
 }
 
 @media(max-width: 475px){
     .field .item{
-        width: 90%;
+        width: 70%;
     }
     form button{
-        width: 90%; 
+        width: 70%; 
     }
-    body{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
 }
 
 @media(max-width: 441px){
     .field .item{
-        width: 90%;
+        width: 65%;
     }
     form button{
-        width: 90%; 
+        width: 65%; 
     }
-    body{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
 }
 
 @media(max-width: 411px){
     .field .item{
-        width: 90%;
+        width: 60%;
     }
     form button{
-        width: 90%; 
+        width: 60%; 
     }
-    body{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
 }
 
 @media(max-width: 380px){
     .field .item{
-        width: 90%;
+        width: 55%;
     }
     form button{
-        width: 90%; 
+        width: 55%; 
     }
     form .textarea-field .item{
         height: 35vh;
     }
-    body{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
 }
 
 @media(max-width: 353px){
     .field .item{
-        width: 90%;
+        width: 50%;
     }
     form button{
-        width: 90%; 
+        width: 50%; 
     }
-    body{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
 }
