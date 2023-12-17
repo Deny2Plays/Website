@@ -254,6 +254,12 @@ span{
         padding: 14px;
         font-size: 15px;
     }
+
+    body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 }
 
 @media(max-width: 633px){
@@ -263,18 +269,34 @@ span{
     .field .error-txt{
         text-align: center;
     }
+
+    body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 }
 
 @media(max-width: 564px){
     .field .item{
         width: 90%;
     }
+    body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 }
 
 @media(max-width: 510px){
     .field .item{
         width: 90%;
     }
+    body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 }
 
 @media(max-width: 475px){
@@ -284,6 +306,11 @@ span{
     form button{
         width: 90%; 
     }
+    body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 }
 
 @media(max-width: 441px){
@@ -293,6 +320,11 @@ span{
     form button{
         width: 90%; 
     }
+    body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 }
 
 @media(max-width: 411px){
@@ -302,6 +334,11 @@ span{
     form button{
         width: 90%; 
     }
+    body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 }
 
 @media(max-width: 380px){
@@ -314,6 +351,11 @@ span{
     form .textarea-field .item{
         height: 35vh;
     }
+    body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 }
 
 @media(max-width: 353px){
@@ -323,4 +365,9 @@ span{
     form button{
         width: 90%; 
     }
+    body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 }
