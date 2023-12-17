@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Deny2Plays</title>
+    <link rel="icon" type="images/x-icon" href="/imgs/logo_transparent.png" />
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'/>
+
+    <link rel="stylesheet" href="css/contact.css" />
+  </head>
+
+  <body>
+    <!-- header -->
+
+    <header class="header">
+        <a href="home" class="logo">Deny2Plays</a>
+
+        <i class='bx bx-menu' id="menu-icon"></i>
+
+        <nav class="navbar">
+            <a href="home">Home</a>
+            <a href="about-me">About Me</a>
+            <a href="tutorials">Tutorials</a>
+            <a href="contact" class="active">Contact</a>
+        </nav>
+    </header>
+
+    <section class="contact" id="contact">
+        <h2>Contact <span>Me!</span></h2>
+
+        <form action="#">
+            <div class="input-box">
+                <div class="input-field field">
+                    <input type="text" placeholder="Nickname" id="name" class="item" autocomplete="off">
+                    <div class="error-txt">Your Nickname can't be blank</div>
+                </div>
+            </div>
+            <div class="input-box">
+                <div class="input-field field">
+                    <input type="text" placeholder="Email Adress" id="email" class="item" autocomplete="off">
+                    <div class="error-txt email">Your Email Address can't be blank</div>
+                </div>
+            </div>
+            <div class="input-box">
+                <div class="input-field field">
+                    <input type="text" placeholder="Subject" id="subject" class="item" autocomplete="off">
+                    <div class="error-txt">Your Subject can't be blank</div>
+                </div>  
+            </div>
+            <div class="textarea-field field">
+                <textarea name="" id="message" cols="30" rows="10" placeholder="Your Message" class="item" autocomplete="off"></textarea>
+                <div class="error-txt">Message can't be blank</div>
+            </div>
+
+            <button type="submit">Send Message</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- gmail contact -->
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+
+    <!-- success alert -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <!-- scroll reveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <script src="js/contact.js"></script>
+  </body>
+</html>
