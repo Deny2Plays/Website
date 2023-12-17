@@ -86,3 +86,23 @@ form.addEventListener("submit", (e) => {
         return false;
     }
 })
+
+
+
+
+
+let menuIcon = document.querySelector("#menu-icon");
+let navbar = document.querySelector(".navbar");
+
+menuIcon.onclick = () => {
+    menuIcon.classList.toggle("bx-x-circle");
+    navbar.classList.toggle("active")
+}
+
+
+ScrollReveal({
+    reset: true,
+    distance: "80px",
+    duration: 2000,
+    delay: 200
+});
